@@ -7,7 +7,7 @@ const audioDramas = [
         description: "A young woman wakes up to discover every trace of her digital life has vanished, only to find her 'deleted self' is alive online.",
         duration: "42:15",
         genres: ["Sci-Fi", "Psychological Thriller", "Mystery"],
-        poster: "https://via.placeholder.com/300x450/6366f1/ffffff?text=Algorithm+Forgot",
+        poster: "poster1.png",
         audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
     },
     {
