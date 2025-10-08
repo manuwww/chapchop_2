@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChapChop - Audio Drama Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ChapChop">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-headphones"></i>
+                    <h1>ChapChop</h1>
+                </div>
+                <div class="header-controls">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Immersive Audio Drama Collection</h2>
+                    <p>Discover captivating stories brought to life through exceptional voice acting and sound design</p>
+                </div>
+            </section>
+
+
+
+            <!-- Drama Collection -->
+            <section class="drama-collection">
+                <div class="collection-header">
+                    <h2>Audio Drama Collection</h2>
+                    <div class="collection-controls">
+                        <div class="collection-filters">
+                            <button class="filter-btn active" id="allFilter">
+                                <i class="fas fa-list"></i>
+                                All Dramas
+                            </button>
+                            <button class="filter-btn" id="bookmarksFilter">
+                                <i class="fas fa-bookmark"></i>
+                                Bookmarks
+                                <span class="bookmark-count" id="bookmarkCount">0</span>
+                            </button>
+                        </div>
+                        <div class="genre-filters">
+                            <label for="genreSelect" class="genre-label">
+                                <i class="fas fa-tags"></i>
+                                Filter by Genre:
+                            </label>
+                            <select id="genreSelect" class="genre-select">
+                                <option value="all">All Genres</option>
+                                <!-- Genre options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="drama-grid" id="dramaGrid">
+                    <!-- Drama items will be populated by JavaScript -->
+                </div>
+                <div class="empty-bookmarks" id="emptyBookmarks" style="display: none;">
+                    <div class="empty-state">
+                        <i class="fas fa-bookmark"></i>
+                        <h3>No Bookmarks Yet</h3>
+                        <p>Click the bookmark icon on any drama card to add it to your favorites</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 ChapChop. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#privacy">Privacy</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Persistent Audio Player -->
+        <div class="persistent-player" id="persistentPlayer" style="display: none;">
+            <div class="player-toggle" id="playerToggle">
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+            <div class="player-container" id="playerContainer">
+                <div class="mini-player" id="miniPlayer">
+                    <div class="mini-artwork">
+                        <img id="miniArtwork" src="" alt="Drama Artwork">
+                    </div>
+                    <div class="mini-info">
+                        <h4 id="miniTitle">Select a drama to play</h4>
+                        <p id="miniChapter">Chapter 1</p>
+                    </div>
+                    <div class="mini-controls">
+                        <button class="mini-btn" id="miniPrevBtn">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button class="mini-btn primary" id="miniPlayBtn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="mini-btn" id="miniNextBtn">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="expanded-player" id="expandedPlayer" style="display: none;">
+                    <div class="player-artwork">
+                        <img id="currentArtwork" src="" alt="Current Drama">
+                        <div class="play-overlay">
+                            <button class="play-btn" id="playBtn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="player-content">
+                        <div class="player-info">
+                            <div class="player-details">
+                                <h3 id="currentTitle">Select a drama to play</h3>
+                                <p id="currentChapter">Chapter 1</p>
+                            </div>
+                        </div>
+                        <div class="player-controls">
+                            <div class="progress-container">
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span>
+                                    <span id="duration">0:00</span>
+                                </div>
+                                <div class="progress-bar" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                    <div class="progress-handle" id="progressHandle"></div>
+                                </div>
+                            </div>
+                            <div class="control-buttons">
+                                <button class="control-btn" id="prevBtn">
+                                    <i class="fas fa-step-backward"></i>
+                                </button>
+                                <button class="control-btn primary" id="mainPlayBtn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="control-btn" id="nextBtn">
+                                    <i class="fas fa-step-forward"></i>
+                                </button>
+                                <div class="volume-control">
+                                    <button class="control-btn" id="volumeBtn">
+                                        <i class="fas fa-volume-up"></i>
+                                    </button>
+                                    <div class="volume-slider">
+                                        <input type="range" id="volumeSlider" min="0" max="100" value="70">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audioElement" preload="metadata"></audio>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
