@@ -7,8 +7,8 @@ const audioDramas = [
         description: "A young woman wakes up to discover every trace of her digital life has vanished, only to find her 'deleted self' is alive online.",
         duration: "42:15",
         genres: ["Sci-Fi", "Psychological Thriller", "Mystery"],
-        poster: "poster1.png",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story1-poster.png",
+        audio: "story1-chapter1.mp3"
     },
     {
         id: 2,
@@ -17,8 +17,8 @@ const audioDramas = [
         description: "A freak snowstorm traps hundreds of cars on an endless highway, revealing the secrets and tensions of those stranded inside.",
         duration: "48:33",
         genres: ["Drama", "Thriller", "Survival"],
-        poster: "https://via.placeholder.com/300x450/8b5cf6/ffffff?text=Frozen+Highway",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story2-poster.png",
+        audio: "story2-chapter1.mp3"
     },
     {
         id: 3,
@@ -27,8 +27,8 @@ const audioDramas = [
         description: "A casual board game night turns terrifying when the pieces move on their own, reenacting a real crime in the town.",
         duration: "39:27",
         genres: ["Horror", "Mystery", "Supernatural"],
-        poster: "https://via.placeholder.com/300x450/ef4444/ffffff?text=Game+Night",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story3-poster.png",
+        audio: "story3-chapter1.mp3"
     },
     {
         id: 4,
@@ -37,8 +37,8 @@ const audioDramas = [
         description: "A woman begins hearing laughter and conversations from a supposedly empty apartment, confronting a reality she doesn't understand.",
         duration: "44:18",
         genres: ["Horror", "Mystery", "Psychological Thriller"],
-        poster: "https://via.placeholder.com/300x450/06b6d4/ffffff?text=Apartment+Hall",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story4-poster.png",
+        audio: "story4-chapter1.mp3"
     },
     {
         id: 5,
@@ -47,8 +47,8 @@ const audioDramas = [
         description: "On the diner's final night, staff and patrons from past and present gather for one last meal—some who shouldn't exist at all.",
         duration: "51:42",
         genres: ["Supernatural", "Drama", "Mystery"],
-        poster: "https://via.placeholder.com/300x450/10b981/ffffff?text=Last+Shift",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story5-poster.png",
+        audio: "story5-chapter1.mp3"
     },
     {
         id: 6,
@@ -57,8 +57,8 @@ const audioDramas = [
         description: "A man discovers his old flip phone still receives voicemails from his teenage self, forcing him to confront forgotten dreams.",
         duration: "37:55",
         genres: ["Sci-Fi", "Mystery", "Drama"],
-        poster: "https://via.placeholder.com/300x450/f59e0b/ffffff?text=Voicemail+1999",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story6-poster.png",
+        audio: "story6-chapter1.mp3"
     },
     {
         id: 7,
@@ -67,8 +67,8 @@ const audioDramas = [
         description: "Two ex-lovers uncover an archive of 'cut moments' from their relationship, confronting memories they chose to erase.",
         duration: "46:12",
         genres: ["Drama", "Romance", "Mystery"],
-        poster: "https://via.placeholder.com/300x450/8b5cf6/ffffff?text=Deleted+Scenes",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story7-poster.png",
+        audio: "story7-chapter1.mp3"
     },
     {
         id: 8,
@@ -77,8 +77,8 @@ const audioDramas = [
         description: "Strangers begin experiencing vivid, shared memories of a marriage that never existed, pulling them together to unravel why it feels so real.",
         duration: "43:38",
         genres: ["Mystery", "Psychological Drama", "Supernatural"],
-        poster: "https://via.placeholder.com/300x450/06b6d4/ffffff?text=Marriage+Fragments",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story8-poster.png",
+        audio: "story8-chapter1.mp3"
     },
     {
         id: 9,
@@ -87,8 +87,8 @@ const audioDramas = [
         description: "A reopened movie theater screens lost memories and secret histories, forcing patrons to face forgotten truths.",
         duration: "49:24",
         genres: ["Supernatural", "Mystery", "Drama"],
-        poster: "https://via.placeholder.com/300x450/ef4444/ffffff?text=Cinema+Lives",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story9-poster.png",
+        audio: "story9-chapter1.mp3"
     },
     {
         id: 10,
@@ -97,8 +97,8 @@ const audioDramas = [
         description: "A retired postman attempts to deliver the final postcard to a town that no longer exists, uncovering what was erased.",
         duration: "41:07",
         genres: ["Sci-Fi", "Adventure", "Mystery"],
-        poster: "https://via.placeholder.com/300x450/10b981/ffffff?text=Last+Postcard",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story10-poster.png",
+        audio: "story10-chapter1.mp3"
     },
     {
         id: 11,
@@ -107,8 +107,8 @@ const audioDramas = [
         description: "Guests become trapped in a motel whose hallways stretch endlessly, scrolling through half-remembered rooms and regrets.",
         duration: "52:19",
         genres: ["Surreal", "Horror", "Psychological Thriller"],
-        poster: "https://via.placeholder.com/300x450/f59e0b/ffffff?text=Infinite+Scroll",
-        audio: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+        poster: "story11-poster.png",
+        audio: "story11-chapter1.mp3"
     }
 ];
 
